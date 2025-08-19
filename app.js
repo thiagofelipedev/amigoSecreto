@@ -1,4 +1,5 @@
 let listaDeNomes = [];
+let sorteioRealizado = false;
 
 function adicionarAmigo() {
     let nomeRecebido = document.getElementById("amigo").value;
