@@ -23,3 +23,36 @@ function atualizarLista() {
         listaVisivel.appendChild(itemLista);
     }
 }
+
+function sortearAmigo() {
+  if (listaDeNomes.length === 0) {
+    document.getElementById('resultado').innerHTML = "Adicione amigos à lista!";
+    return;
+  }
+
+  if (sorteioRealizado) {
+    return;
+  }
+
+  const indiceAleatorio = Math.floor(Math.random() * listaDeNomes.length);
+  const amigoSorteado = listaDeNomes[indiceAleatorio];
+
+  document.getElementById('resultado').innerHTML = "O amigo sorteado é: " + amigoSorteado;
+  document.getElementById('listaAmigos').innerHTML = "";
+
+  sorteioRealizado = true;
+}
+
+// realizei uma verificação para evitar que o sorteio fosse realizado
+// mais de uma vez com a variável sorteioRealizado, pois o sorteio só deve ser realizado uma vez por sessão.
+
+
+// exemplo de código comentado para sortear amigo em que tentei verificar se a 
+// lista estava vazia antes de sortear, porém não funcionou como esperado 
+// pois não havia compreendido que o array estava vazio e não a string.
+
+// function sortearAmigo() {
+//     if (listaDeNomes == "") {
+//         adicionarAmigo();
+//     }
+// }
