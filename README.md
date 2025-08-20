@@ -46,6 +46,8 @@ amigo-secreto/
 
 ## 🎮 Demonstração
 
+Acesse este link do jogo no [**Github Pages**](https://thiagofelipedev.github.io/amigoSecreto/)
+
 ## 👨‍💻 Autor
 
 Feito com 💙 por Thiago Felipe de Oliveira
